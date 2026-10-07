@@ -3,25 +3,52 @@
 <head>
     <title>Event Registration</title>
 </head>
+
 <body>
 
-    <h2>Event Registration Form</h2>
+    <h1>Event Registration Form</h1>
 
     <form>
-        <label>Name:</label>
-        <input type="text" name="name"><br><br>
+
+        <label>Full Name:</label>
+        <input type="text" name="name" required>
+        <br><br>
 
         <label>Email:</label>
-        <input type="email" name="email"><br><br>
+        <input type="email" name="email" required>
+        <br><br>
 
-        <label>Event:</label>
+        <label>Phone Number:</label>
+        <input type="tel" name="phone" required>
+        <br><br>
+
+        <label>Gender:</label>
+
+        <input type="radio" name="gender" value="Male">
+        Male
+
+        <input type="radio" name="gender" value="Female">
+        Female
+
+        <br><br>
+
+        <label>Select Event:</label>
+
         <select name="event">
-            <option>Technical Workshop</option>
-            <option>Hackathon</option>
-            <option>Seminar</option>
-        </select><br><br>
+            <option value="workshop">Technical Workshop</option>
+            <option value="hackathon">Hackathon</option>
+            <option value="seminar">Seminar</option>
+        </select>
+
+        <br><br>
+
+        <label>College Name:</label>
+        <input type="text" name="college">
+        <br><br>
 
         <button type="submit">Register</button>
+        <button type="reset">Reset</button>
+
     </form>
 
 </body>
